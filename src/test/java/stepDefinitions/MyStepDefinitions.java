@@ -19,12 +19,12 @@ public class MyStepDefinitions {
     private WebDriver driverInternetExplorer = Hooks.driverInternetExplorer;
 
     static GooglePageElements googlePageElementsChrome;
-    static GooglePageElements googlePageElementsFireFox;
+    static GooglePageElements googlePageElementsFirefox;
     static GooglePageElements googlePageElementsInternetExplorer;
 
     public MyStepDefinitions() {
         googlePageElementsChrome = PageFactory.initElements(Hooks.driverChrome, GooglePageElements.class);
-        googlePageElementsFireFox = PageFactory.initElements(Hooks.driverFirefox, GooglePageElements.class);
+        googlePageElementsFirefox = PageFactory.initElements(Hooks.driverFirefox, GooglePageElements.class);
         googlePageElementsInternetExplorer = PageFactory.initElements(Hooks.driverInternetExplorer, GooglePageElements.class);
     }
 
@@ -60,15 +60,15 @@ public class MyStepDefinitions {
     @Then("^I am checking elements availability on google web page Firefox$")
     public void iAmCheckingElementsAvailabilityOnGoogleWebPageFirefox() throws IOException {
         driverFirefox.findElement(By.cssSelector("#SIvCob :nth-child(3)")).click();
-        googlePageElementsFireFox.checkGmailLink();
-        googlePageElementsFireFox.checkPicturesLink();
-        googlePageElementsFireFox.checkMenuButton();
-        googlePageElementsFireFox.checkLoginButton();
-        googlePageElementsFireFox.checkLogo();
-        googlePageElementsFireFox.checkSearchBox();
-        googlePageElementsFireFox.checkSearchButton();
-        googlePageElementsFireFox.checkLuckButton();
-        googlePageElementsFireFox.checkLanguage();
+        googlePageElementsFirefox.checkGmailLink();
+        googlePageElementsFirefox.checkPicturesLink();
+        googlePageElementsFirefox.checkMenuButton();
+        googlePageElementsFirefox.checkLoginButton();
+        googlePageElementsFirefox.checkLogo();
+        googlePageElementsFirefox.checkSearchBox();
+        googlePageElementsFirefox.checkSearchButton();
+        googlePageElementsFirefox.checkLuckButton();
+        googlePageElementsFirefox.checkLanguage();
     }
 
     @And("^I am checking elements availability on google web page Internet Explorer$")

@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         plugin = {"pretty"},
-        tags = {"@test"},
+        tags = {"@demoChrome"},
         glue = {"stepDefinitions"}
 )
 public class Runner {
